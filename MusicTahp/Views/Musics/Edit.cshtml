@@ -1,0 +1,59 @@
+﻿@model MusicTahp.Models.Music
+
+@{
+    ViewData["Title"] = "Chỉnh sửa";
+}
+
+<h1>Chỉnh sửa</h1>
+
+<h4>Music</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="TenCaKhuc" class="control-label"></label>
+                <input asp-for="TenCaKhuc" class="form-control" />
+                <span asp-validation-for="TenCaKhuc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CaSi" class="control-label"></label>
+                <input asp-for="CaSi" class="form-control" />
+                <span asp-validation-for="CaSi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TheLoai" class="control-label"></label>
+                <input asp-for="TheLoai" class="form-control" />
+                <span asp-validation-for="TheLoai" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NgayBan" class="control-label"></label>
+                <input asp-for="NgayBan" class="form-control" />
+                <span asp-validation-for="NgayBan" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Gia" class="control-label"></label>
+                <input asp-for="Gia" class="form-control" />
+                <span asp-validation-for="Gia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DiaChi" class="control-label"></label>
+                <input asp-for="DiaChi" class="form-control" />
+                <span asp-validation-for="DiaChi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Trở về đơn hàng</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

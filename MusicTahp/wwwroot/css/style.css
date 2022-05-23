@@ -1,0 +1,100 @@
+﻿body {
+    font-size: 15px;
+    width: 1050px;
+    margin: 0px auto;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#banner {
+    height: auto;
+    width: 1000px;
+}
+
+#banner img {
+    width: 1020px;
+    height: 500px;
+}
+
+#main #left {
+    width: 800px;
+    float: left;
+    min-height: 400px;
+}
+
+#main #right {
+    width: 200px;
+    float: right;
+    min-height: 400px;
+}
+
+#main #left ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+#main #left ul li {
+    list-style: none;
+    clear: left;
+    border-bottom: 2px solid black;
+    float: left;
+    margin-bottom: 20px;
+    }
+
+#main #left ul li img {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+#main #right .menu_right ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+#main #right .menu_right ul li {
+    list-style: none;
+}
+
+#main #right .menu_right h3 {
+    background: #194d58;
+    height: 40px;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 40px;
+    color: white;
+}
+
+#main #right .menu_right ul li a {
+    display: block;
+    text-decoration: none;
+    line-height: 32px;
+    border-bottom: 1px solid #ccc;
+    color: #000;
+    text-indent: 20px;
+}
+
+h2, h1 {
+    text-align: center;
+}
+
+#footer{
+    margin-bottom: -50px;
+}
+
+.detele{
+    color: red;
+}
+
+.edit{
+    color: green;
+}
+
+.detail{
+    color: yellow;
+}
+
+.table{
+    border: 2px solid black;
+}
